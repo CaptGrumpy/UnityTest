@@ -6,6 +6,9 @@ function Start ()
 
 function Update ()
 {
+	Camera.main.transform.position.x += Input.GetAxis( "Mouse X" );
+	Camera.main.transform.position.y += Input.GetAxis( "Mouse Y" );
+	Camera.main.transform.position.z += Input.GetAxis( "Mouse ScrollWheel" );
 }
 
 function OnMouseUp ()
